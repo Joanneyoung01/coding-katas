@@ -7,13 +7,8 @@ class Supermarket {
       C: 20,
       D: 15
     }
-    
 
-    // take input
     var item = price[input]
-    // change input into an array
-    // translate each letter into a number
-    // add the numbers together
 
     if (item === "AA") {
       return 100

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header.component';
+import { Selector } from './components/Selector.component';
 import './App.css';
 
 export const App = () => {
@@ -22,10 +23,7 @@ export const App = () => {
   return (
     <div className="App container">
     <Header />
-    <select id="drop-down" onChange={e => setCategory(e.target.value)}>
-      <option value="dragons">dragons</option>
-      <option value="rockets">rockets</option>
-    </select>
+    <Selector category={category} setCategory={setCategory}/>
     <p>The category is {category}</p>
       <div className="cards">
         {info.map((item, index) => (

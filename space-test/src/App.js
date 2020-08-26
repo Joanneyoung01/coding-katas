@@ -54,7 +54,7 @@ export const CardSection = (props) => {
   return (
     <div className="cards">
       {props.info.map((item, index) => (
-        <div id={item.id} className="card w-50 container">
+        <div id={item.id} className="card container">
           <h1>{props.category === "rockets" ? item.rocket_name : item.name}</h1>
           <p>{item.description}</p>
           {item.flickr_images.map((url, index) => (

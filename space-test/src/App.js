@@ -53,7 +53,7 @@ export const CardSection = (props) => {
 
   return (
     <div className="cards">
-      {props.info.map((item, index) => (
+      {props.info.map((item) => (
         <div id={item.id} className="card container">
           <h1>{props.category === "rockets" ? item.rocket_name : item.name}</h1>
           <p>{item.description}</p>

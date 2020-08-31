@@ -58,7 +58,10 @@ export const CardSection = (props) => {
           <h1>{props.category === "rockets" ? item.rocket_name : item.name}</h1>
           <p>{item.description}</p>
           {item.flickr_images.map((url, index) => (
-            <img id={index} src={url} className="w-100"></img>
+            <img 
+              id={index} src={url}
+              className="w-100"
+            ></img>
           ))}
         </div>
       ))},

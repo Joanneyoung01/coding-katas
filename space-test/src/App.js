@@ -71,6 +71,4 @@ export const CardSection = (props) => {
   );
 }
 
-
-
 export default App;

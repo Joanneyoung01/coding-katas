@@ -25,7 +25,9 @@ export const App = () => {
       category={category} 
       setCategory={setCategory}
     />
-    <p>The category is {category}</p>
+    <p>
+      The category is {category}
+    </p>
     <CardSection 
       info={info} 
       category={category} 

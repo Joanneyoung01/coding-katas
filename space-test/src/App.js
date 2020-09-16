@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 export const App = () => {
-  
   const [category, setCategory] = useState("dragons")
   const [info, setInfo] = useState([])
 
